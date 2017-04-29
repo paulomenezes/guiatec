@@ -1,0 +1,387 @@
+/* #ffa518 */
+/* #eeeeee */
+
+body { font-family: Roboto; }
+strong { color: #ffa518; }
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.clear { clear: both; }
+
+/* TOP */
+
+.top {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.top .title {
+	color: #ffa518;
+}
+
+.top .title .guia {
+	font-size: 45px;
+	font-weight: lighter;
+}
+
+.top .title .tec {
+	font-size: 45px;
+	font-weight: medium;
+}
+
+.top .slogan {
+	font-size: 25px;
+	font-weight: lighter;
+	font-style: italic;
+	color: #777777;
+}
+
+.top .social ul {
+	float: right;
+	margin-top: 30px;
+}
+
+.top .social li {
+	float: left;
+	margin-right: 10px;
+}
+
+.top .social li:last-child {
+	margin-right: 0px;
+}
+
+/* - RIGHT */
+
+.user {
+	margin-top: 10px;
+}
+
+.user .links {
+	text-align: right;
+}
+
+.user .photo {
+	float: right;
+}
+
+.user .photo .userPhoto {
+	width: 74px;
+	height: 74px;
+	border: 1px solid #ffa518;
+
+	float: right;
+}
+
+/* TOP */
+
+/* MENU */
+
+.f-nav{ z-index: 1000; position: fixed; left: 0; top: 0; width: 100%;}
+
+.menu {
+	height: 56px;
+	background-color: #ffa518;
+}
+
+.menu .icon-button {
+	float: left;
+}
+
+.menu .iconMenu {
+	width: 56px;
+	height: 56px;
+
+	cursor: pointer;
+
+	background-image: url("../images/icons/ic_menu_white_36dp.png");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.menu .titlePage {
+	color: white;
+	font-size: 25px;
+	margin-top: 11px;
+}
+
+.menu .options ul {
+	margin-top: 18px;
+	float: right;
+}
+
+.menu .options li {
+	font-size: 16px;
+
+	float: left;
+	color: white;
+
+	margin-right: 10px;
+}
+
+.menu .options li a {
+	color: white;
+}
+
+/* MENU */
+
+/* BANNER */
+
+.banner {
+	background-image: url("../images/banner/moto-x.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+
+	width: 100%;
+	height: 800px;
+}
+
+.banner .container {
+	padding-top: 100px;
+	color: white;
+	text-align: right;
+}
+
+.banner .container .bannerTitle {
+	font-size: 60px;
+	font-weight: lighter;
+}
+
+.banner .container .bannerMessage {
+	font-size: 35px;
+	font-weight: lighter;
+}
+
+.banner .container .bannerSource {
+	font-size: 25px;
+	font-weight: 400;
+	font-style: bold;
+}
+
+/* BANNER */
+
+/* CONTENT */
+
+.contentArea .gray {
+	background-color: #eeeeee;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+}
+
+.contentArea .white {
+	padding-bottom: 20px;
+}
+
+.contentArea .contentTitle {
+	font-size: 36px;
+	font-weight: lighter;
+	color: #ffa518;
+
+	padding-bottom: 10px;
+}
+
+.contentArea .reviews {
+	border-right: 1px #dbdbdb solid;
+}
+
+.contentArea .reviews .item {
+	border-bottom: 1px #dbdbdb solid;
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+}
+
+.contentArea .reviews .item .header {
+	font-size: 16px;
+	clear: both;
+}
+
+.contentArea .reviews .item .header .site {
+	float: left;
+	font-weight: bold;
+}
+
+.contentArea .reviews .item .header .date {
+	color: #c7c7c7;
+	float: left;
+	margin-left: 10px;
+}
+
+.contentArea .reviews .item .content {
+	margin-top: 5px;
+}
+
+.contentArea .reviews .item .link {
+	margin-top: 5px;
+}
+
+.contentArea .reviews .item .link a {
+	color: #ffa518;
+}
+
+.contentArea .reviewsComments li {
+	margin-bottom: 30px;
+}
+
+.contentArea .reviewsComments .quote {
+	width: 34px;
+	height: 22px;
+	margin-bottom: 10px;
+
+	background-image: url("../images/icons/quote.png");
+} 
+
+.contentArea .reviewsComments .text {
+	font-size: 16px;
+	text-transform: uppercase;
+	color: #ffa518;
+} 
+
+.contentArea .reviewsComments .source {
+	font-size: 16px;
+	text-align: right;
+} 
+
+.contentArea .userReviews .reviewsCount {
+	margin-bottom: 5px;
+}
+
+.contentArea .userReviews .reviewsCount .score {
+	font-size: 36px;
+	float: left;
+}
+
+.contentArea .userReviews .reviewsCount .quantity {
+	font-size: 16px;
+	float: left;
+	margin-left: 6px;
+	margin-top: 5px;
+}
+
+.contentArea .userReviews li {
+	margin-bottom: 10px;
+}
+
+.contentArea .userReviews li .item {
+	font-size: 16px;
+}
+
+.contentArea .userReviews li .graphArea {
+	width: 90%;
+	height: 20px;
+	background-color: #f9f9f9;
+
+	float: left;
+
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.contentArea .userReviews li .graphArea .graphContent {
+	height: 100%;
+	background-color: #ffa518;
+}
+
+.contentArea .userReviews li .score {
+	float: right;
+	font-size: 16px;
+	margin-top: 5px;
+	margin-right: 10px;
+}
+
+.contentArea .addReview {
+	float: right;
+	position: relative;
+}
+
+.contentArea .specs {
+	margin-bottom: 20px;
+}
+
+.contentArea .specs .key {
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.contentArea .specs .value {
+	font-size: 16px;
+	margin-top: 5px;
+}
+
+.contentArea .compare .image {
+	width: 200px;
+	margin: 0 auto;
+}
+
+.contentArea .compare .name {
+	text-align: center;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.contentArea .compare .check {
+	width: 85px;
+	margin: 0 auto;
+}
+
+.contentArea .compare .check input {
+	float: left;
+	margin-top: 8px;
+}
+
+.contentArea .compare .check div {
+	float: left;
+	margin-left: 10px;
+
+	font-weight: normal;
+}
+
+.contentArea .videos .image img {
+	width: 263px;
+}
+
+.contentArea .videos .name {
+	margin-top: 5px;
+	font-size: 16px;
+}
+
+.contentArea .videos .from {
+	margin-top: 5px;
+	color: #ffa518;
+}
+
+.contentArea .compare .store {
+	width: 100px;
+	margin-top: 15px;
+}
+
+.contentArea .compare .store img { width: 100px; }
+
+.contentArea .compare .price {
+	margin-top: 5px;
+	text-align: center;
+	font-size: 22px;
+	color: #ffa518;
+}
+
+.contentArea .compare .shopItems li {
+	border-bottom: 1px solid #eeeeee;
+}
+
+.contentArea .compare .shopItems li:last-child {
+	border-bottom: none;
+}
+
+/************* AD ***************/
+
+.ad1 {
+	width: 728px;
+	height: 90px;
+	border: 1px solid black;
+
+	float: right;
+	margin-top: 5px;
+}

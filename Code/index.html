@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Guiatec - Seu guia completo de tecnologia!</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- fonts 
+		<link rel="stylesheet" type="text/css" href="css/MyFontsWebfontsKit.css">-->
+
+		<!-- bootstrap -->
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+		<script src="js/jquery-2.1.3.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+
+		<!-- my styles -->
+		<link rel="stylesheet" type="text/css" href="css/sidebar.css">
+		<link rel="stylesheet" type="text/css" href="css/template.css">
+
+		<link rel="stylesheet" type="text/css" href="css/components/checkbox.css">
+		<link rel="stylesheet" type="text/css" href="css/components/button.css">
+
+		<script src="js/template.js"></script>
+
+		<script src="js/Chart.js"></script>
+		<script src="js/priceGraph.js"></script>
+
+		<link rel="import" href="http://www.polymer-project.org/components/paper-ripple/paper-ripple.html">
+	</head>
+
+	<body style="display: initial">
+
+		<!-- Overlay for fixed sidebar -->
+		<div class="sidebar-overlay"></div>
+
+		<!-- Material sidebar -->
+		<aside id="sidebar" class="sidebar sidebar-default sidebar-fixed-left" role="navigation">
+		    <!-- Sidebar header -->
+		    <div class="sidebar-header header-cover">
+		        <!-- Sidebar toggle button -->
+		        <div class="sidebar-buttons">
+			        <button type="button" class="sidebar-toggle">
+			            <span aria-hidden="true">&times;</span>
+			        </button>
+		        </div>
+		        <!-- Sidebar brand image -->
+		        <div class="sidebar-image">
+		            <img src="images/profile/Profile.jpg">
+		        </div>
+		        <!-- Sidebar brand name -->
+		        <div class="sidebar-brand">Paulo Menezes</div>
+		    </div>
+
+		    <!-- Sidebar navigation -->
+		    <ul class="nav sidebar-nav">
+		        <li>
+		            <a href="#">
+		                <i class="sidebar-icon md-notifications"></i>
+		                Notificações
+		                <span class="sidebar-badge badge-circle">10</span>
+		            </a>
+		        </li>
+		        <li>
+		            <a href="#">
+		                <i class="sidebar-icon md-portrait"></i>
+		                Meu painel
+		            </a>
+		        </li>
+		        <li>
+		            <a href="#">
+		                <i class="sidebar-icon md-exit"></i>
+		                Sair
+		            </a>
+		        </li>
+		        <li class="divider"></li>
+		        <li>
+		            <a href="#">Inicio</a>
+		        </li>
+		        <li>
+		            <a href="#">
+		                Smartphones
+		                <span class="sidebar-badge badge-circle">100</span>
+		            </a>
+		        </li>
+		        <li>
+		            <a href="#">
+		                Computadores
+		                <span class="sidebar-badge badge-circle">100</span>
+		            </a>
+		        </li>
+		        <li>
+		            <a href="#">
+		                Fotografia
+		                <span class="sidebar-badge badge-circle">100</span>
+		            </a>
+		        </li>
+		        <li>
+		            <a href="#">
+		                Vestíveis
+		                <span class="sidebar-badge badge-circle">100</span>
+		            </a>
+		        </li>
+			    <!-- Sidebar divider -->
+			    <div class="sidebar-divider"></div>
+		        <li>
+		            <a href="#">
+		                <i class="sidebar-icon md-info"></i>
+		                Sobre o Guiatec
+		            </a>
+		        </li>
+		    </ul>
+		    
+		    <!-- Sidebar text -->
+		    <div class="sidebar-text sidebar-social">
+		    	<ul>
+					<a href="#"><li><img src="images/icons/facebook.png" /></li></a>
+					<a href="#"><li><img src="images/icons/twitter.png" /></li></a>
+					<a href="#"><li><img src="images/icons/googleplus.png" /></li></a>
+				</ul>
+		    </div>
+		</aside>
+
+		<div class="container top" id="inicio">
+			<div class="row">
+				<div class="col-md-4">
+					<div class="title">
+						<span class="guia">Guia</span>
+						<span class="tec">tec</span>
+					</div>
+					<div class="slogan">
+						Seu guia completo de tecnologia!
+					</div>
+				</div>
+
+				<div class="col-md-8" style="padding:0px; ">
+					<div class="ad1"></div>
+					<!--
+					<div class="col-md-9 links">
+						<ul>
+							<li><strong>Paulo Menezes</strong></li>
+							<li>2 notificações</li>
+							<li>Ver perfil</li>
+							<li>Sair</li>
+						</ul>
+					</div>
+					<div class="col-md-3 photo" style="padding:0px; ">
+						<div class="userPhoto"></div>
+					</div>-->
+				</div>
+			</div>
+		</div>
+
+		<div class="menu">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4">
+						<div class="icon-button sidebar-toggle">
+							<div class="iconMenu"></div>
+							<paper-ripple class="circle recenteringTouch" fit></paper-ripple>
+					    </div>
+						<div class="titlePage">
+							Moto X 2014
+						</div>
+					</div>
+					<div class="col-md-8 options" style="padding-right:0px">
+						<ul>
+							<li><a href="#inicio">Inicio</a></li>
+							<li><a href="#analises">Análises</a></li>
+							<li><a href="#especificacoes">Especificações</a></li>
+							<li><a href="#compare">Compare</a></li>
+							<li><a href="#videos">Vídeos</a></li>
+							<li><a href="#comprar">Onde comprar</a></li>
+							<li><a href="#outros">Outros</a></li>
+							<li>
+								<a href="#outros">
+									<img src="images/icons/ic_search_black_24dp.png" />
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="banner">
+			<div class="container">
+				<div class="bannerTitle">Moto X 2014</div>
+				<div class="bannerMessage">o divisor de águas dos<br /> smartphones topo de linha</div>
+				<div class="bannerSource">tecnoblog</div>
+			</div>
+		</div>
+
+		<div class="contentArea" id="analises">
+			<div class="gray">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-10">
+							<div class="contentTitle">Análises</div>
+						</div>
+						<div class="col-md-2">
+							<div class="button raised orange" style="float:right;padding-right:0px;">
+							    <div class="center" fit>ver todas</div>
+							    <paper-ripple fit></paper-ripple>
+						    </div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-md-7 reviews">
+							<ul>
+								<li class="item">
+									<div class="header">
+										<div class="site">Tecmundo</div>
+										<div class="date">/ 5 de outubro</div>
+										<div class="clear"></div>
+									</div>
+									<div class="content">
+										A Motorola deu a volta por cima e agora quer consolidar a sua posição. O Novo Moto X é o “garoto propaganda” da marca e tem a missão de popularizar o segmento dos top de linha no Brasil.
+									</div>
+									<div class="link">
+										<a href="#">Ver análise completa</a>
+									</div>
+								</li>
+								<li class="item">
+									<div class="header">
+										<div class="site">Tecnoblog</div>
+										<div class="date">/ 5 de outubro</div>
+										<div class="clear"></div>
+									</div>
+									<div class="content">
+										Segunda geração do Moto X tem tela gigante, hardware moderno, construção premium e preço de mid-end.
+									</div>
+									<div class="link">
+										<a href="#">Ver análise completa</a>
+									</div>
+								</li>
+								<li class="item">
+									<div class="header">
+										<div class="site">Gizmodo</div>
+										<div class="date">/ 5 de outubro</div>
+										<div class="clear"></div>
+									</div>
+									<div class="content">
+										O Moto X é fantástico. Não por ter o melhor processador, ou a melhor tela, nem a melhor câmera. Ele sequer tem a versão mais recente do Android. Mas a combinação de todos seus detalhes bem pensados faz dele um smartphone espetacular. O Android para todos.
+									</div>
+									<div class="link">
+										<a href="#">Ver análise completa</a>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="col-md-5 reviewsComments">
+							<ul>
+								<li>
+									<div class="quote"></div>
+									<div class="text">A tela amoled do novo moto x está mais equilibrada.</div>
+									<div class="source">tecnoblog</div>
+								</li>
+
+								<li>
+									<div class="quote"></div>
+									<div class="text">A CÂMERA FRONTAL ESTÁ CADA VEZ MAIS RELEVANTE.</div>
+									<div class="source">tecnoblog</div>
+								</li>
+
+								<li>
+									<div class="quote"></div>
+									<div class="text">HARDWARE TOPO DE LINHA, ACABAMENTO PREMIUM E PREÇO ATRAENTE.</div>
+									<div class="source">tecnoblog</div>
+								</li>
+							<ul>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="white">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-10">
+							<div class="contentTitle">Análises dos usuários</div>
+						</div>
+						<div class="col-md-2">
+							<div class="button raised orange" style="float:right;padding-right:0px;">
+							    <div class="center" fit>adicionar análise</div>
+							    <paper-ripple fit></paper-ripple>
+						    </div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-md-5 userReviews">
+							<div class="reviewsCount">
+								<div class="score">8.6</div>
+								<div class="quantity">/ 7 análises</div>
+								<div class="clear"></div>
+							</div>
+							<ul>
+								<li>
+									<div class="item">Qualidade da ligação</div>
+									<div class="graphArea">
+										<div class="graphContent" style="width:85%;"></div>
+									</div>
+									<div class="score">8.5</div>
+									<div class="clear"></div>
+								</li>
+								<li>
+									<div class="item">Tela</div>
+									<div class="graphArea">
+										<div class="graphContent" style="width:100%;"></div>
+									</div>
+									<div class="score">10</div>
+									<div class="clear"></div>
+								</li>
+								<li>
+									<div class="item">Bateria</div>
+									<div class="graphArea">
+										<div class="graphContent" style="width:90%;"></div>
+									</div>
+									<div class="score">9</div>
+									<div class="clear"></div>
+								</li>
+								<li>
+									<div class="item">Câmera</div>
+									<div class="graphArea">
+										<div class="graphContent" style="width:80%;"></div>
+									</div>
+									<div class="score">8</div>
+									<div class="clear"></div>
+								</li>
+								<li>
+									<div class="item">Design</div>
+									<div class="graphArea">
+										<div class="graphContent" style="width:75%;"></div>
+									</div>
+									<div class="score">7.5</div>
+									<div class="clear"></div>
+								</li>
+							</ul>
+						</div>
+						<div class="col-md-7 reviewsComments">
+							<ul>
+								<li>
+									<div class="quote"></div>
+									<div class="text">A tela amoled do novo moto x está mais equilibrada.</div>
+									<div class="source">tecnoblog</div>
+								</li>
+
+								<li>
+									<div class="quote"></div>
+									<div class="text">A CÂMERA FRONTAL ESTÁ CADA VEZ MAIS RELEVANTE.</div>
+									<div class="source">tecnoblog</div>
+								</li>
+
+								<li>
+									<div class="quote"></div>
+									<div class="text">HARDWARE TOPO DE LINHA, ACABAMENTO PREMIUM E PREÇO ATRAENTE.</div>
+									<div class="source">tecnoblog</div>
+								</li>
+							<ul>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="gray" id="especificacoes">
+
+				<div class="container">
+					<div class="contentTitle">Especificações</div>
+
+					<div class="row specs">
+						<div class="col-md-3">
+							<div class="key">Sistema operacional</div>
+							<div class="value">Android KitKat 4.4.4 com atualização garantida para o 5.0 Lollipop</div>
+						</div>
+						<div class="col-md-3">
+							<div class="key">Processador</div>
+							<div class="value">Qualcomm Snapdragon 801 MSM8974-AC, Quad-core 2.5 GHz</div>
+						</div>
+						<div class="col-md-3">
+							<div class="key">Vedação</div>
+							<div class="value">Resistente a respingos de água</div>
+						</div>
+						<div class="col-md-3">
+							<div class="key">GPU</div>
+							<div class="value">Adreno 330 de 578 MHz</div>
+						</div>
+					</div>
+					<div class="row specs">
+						<div class="col-md-3">
+							<div class="key">Tela</div>
+							<div class="value">5,2'' AMOLED com proteção Gorilla Glass 3</div>
+						</div>
+						<div class="col-md-3">
+							<div class="key">Resolução de tela</div>
+							<div class="value">Full HD 1080x1920</div>
+						</div>
+						<div class="col-md-3">
+							<div class="key">Densidade de pixels</div>
+							<div class="value">423 ppi</div>
+						</div>
+						<div class="col-md-3">
+							<div class="key">Memória</div>
+							<div class="value">2 GB RAM</div>
+						</div>
+					</div>
+					<div class="row specs">
+						<div class="col-md-3">
+							<div class="key">Armazenamento</div>
+							<div class="value">32 GB</div>
+						</div>
+						<div class="col-md-3">
+							<div class="key">Câmera Traseira</div>
+							<div class="value">
+								13 MP 1/3.06 '' (f2.25 e Dist. Focal de 29 mm) com gravação de vídeo em 4K, zoom digital de 4x e flash duplo com difusor de luz
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="key">Câmera Frontal</div>
+							<div class="value">2 MP com vídeo em Full HD (1080p)</div>
+						</div>
+						<div class="col-md-3">
+							<div class="key">Bateria</div>
+							<div class="value">2.300 mAh</div>
+						</div>
+					</div>
+					<div class="row specs">
+						<div class="col-md-3">
+							<div class="key">Conectividade</div>
+							<div class="value">
+								WiFi (802.11 a/b/g/n/ac dual-band), <br />
+								NFC, UMTS/HSPA+ (3G de até 42.2 Mbps), <br />
+								LTE, Bluetooth 4.0, USB 2.0
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="key">Dimensões</div>
+							<div class="value">
+								14,09 cm (altura)<br />
+								7,24 cm (largura)<br />
+								0,99 cm (espessura)<br />
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="key">Peso</div>
+							<div class="value">144 gramas</div>
+						</div>
+						<div class="col-md-3">
+							<div class="key">Cores</div>
+							<div class="value">
+								Branco com bambu natural, <br />
+								Preto SoftFeel, <br />
+								Preto em couro legítimo <br />
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="white" id="compare">
+
+				<div class="container">
+					<div class="row">
+						<div class="col-md-9">
+							<div class="contentTitle">Compare com outros aparelhos</div>
+						</div>
+						<div class="col-md-1">
+							<div class="button raised">
+							    <div class="center" fit>mais modelos</div>
+							    <paper-ripple fit></paper-ripple>
+						    </div>
+						</div>
+						<div class="col-md-2">
+							<div class="button raised orange" style="float:right;padding-right:0px;">
+							    <div class="center" fit>comparar</div>
+							    <paper-ripple fit></paper-ripple>
+						    </div>
+						</div>
+					</div>
+
+					<div class="row compare">
+						<div class="col-md-3">
+							<div class="image"><img src="images/compare/moto-g.jpg" /></div>
+							<div class="name">Motorola Moto G 2014</div>
+							<div class="check">
+						      	<label class="label--checkbox">
+						        	<input type="checkbox" class="checkbox">
+						            <div>comparar</div>
+						      	</label>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="image"><img src="images/compare/galaxy-note-4.jpg" /></div>
+							<div class="name">Samsung Galaxy Note 4</div>
+							<div class="check">
+						      	<label class="label--checkbox">
+						        	<input type="checkbox" class="checkbox">
+						            <div>comparar</div>
+						      	</label>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="image"><img src="images/compare/lg-g3-beat.jpg" /></div>
+							<div class="name">LG G3 Beat</div>
+							<div class="check">
+						      	<label class="label--checkbox">
+						        	<input type="checkbox" class="checkbox">
+						            <div>comparar</div>
+						      	</label>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="image"><img src="images/compare/lg-g2-mini.jpg" /></div>
+							<div class="name">LG G2 Mini</div>
+							<div class="check">
+						      	<label class="label--checkbox">
+						        	<input type="checkbox" class="checkbox">
+						            <div>comparar</div>
+						      	</label>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="gray" id="videos">
+
+				<div class="container">
+					<div class="row">
+						<div class="col-md-10">
+							<div class="contentTitle">Vídeos</div>
+						</div>
+						<div class="col-md-2">
+							<div class="button raised orange" style="float:right;padding-right:0px;">
+							    <div class="center" fit>ver todos</div>
+							    <paper-ripple fit></paper-ripple>
+						    </div>
+						</div>
+					</div>
+
+					<div class="row videos">
+						<div class="col-md-3">
+							<div class="image"><img src="http://img.youtube.com/vi/RpphiCIVd8s/0.jpg" /></div>
+							<div class="name">Motorola Moto X (2014): Motorola wins [Análise]</div>
+							<div class="from">Canaltech</div>
+						</div>
+						<div class="col-md-3">
+							<div class="image"><img src="http://img.youtube.com/vi/fNGOunC0nUM/0.jpg" /></div>
+							<div class="name">Novo Moto X [Análise] - TecMundo</div>
+							<div class="from">Baixaki e TecMundo</div>
+						</div>
+						<div class="col-md-3">
+							<div class="image"><img src="http://img.youtube.com/vi/sd37EYURRtk/0.jpg" /></div>
+							<div class="name">Moto X 2014 - Análise</div>
+							<div class="from">Eu Sou Android 2.0</div>
+						</div>
+						<div class="col-md-3">
+							<div class="image"><img src="http://img.youtube.com/vi/y4yVH5pjIdk/0.jpg" /></div>
+							<div class="name">Novo Moto X [REVIEW]</div>
+							<div class="from">ANDROIDPIT Brasil</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="white" id="comprar">
+
+				<div class="container">
+					<div class="row">
+						<div class="col-md-6">
+							<div class="contentTitle">Onde comprar</div>
+						</div>
+						<div class="col-md-6">
+							<div class="contentTitle">Histórico de preço</div>
+						</div>
+					</div>
+
+					<div class="row compare">
+						<div class="col-md-6">
+							<div class="col-md-5">
+								<div class="image"><img src="images/compare/moto-x.jpg" /></div> 
+								<div class="name">Motorola Moto X 2014</div>
+							</div>
+							<div class="col-md-7">
+								<ul class="shopItems">
+									<li>
+										<div class="col-md-4">
+											<div class="store"><img src="images/stores/americanas.gif" /></div>
+										</div>
+										<div class="col-md-8">
+											<div class="price">R$ 1.349,10</div>
+											<div class="name">ou 10x R$ 134,90</div>
+										</div>
+										<div class="clear"></div>
+									</li>
+									<li>
+										<div class="col-md-4">
+											<div class="store"><img src="images/stores/submarino.jpg" /></div>
+										</div>
+										<div class="col-md-8">
+											<div class="price">R$ 1.349,10</div>
+											<div class="name">ou 10x R$ 134,90</div>
+										</div>
+										<div class="clear"></div>
+									</li>
+									<li>
+										<div class="col-md-4">
+											<div class="store"><img src="images/stores/tim.jpg" /></div>
+										</div>
+										<div class="col-md-8">
+											<div class="price">R$ 1.349,10</div>
+											<div class="name">ou 10x R$ 134,90</div>
+										</div>
+										<div class="clear"></div>
+									</li>
+									<li>
+										<div class="col-md-4">
+											<div class="store"><img src="images/stores/walmart.png" /></div>
+										</div>
+										<div class="col-md-8">
+											<div class="price">R$ 1.349,10</div>
+											<div class="name">ou 10x R$ 134,90</div>
+										</div>
+										<div class="clear"></div>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<canvas id="canvas" height="130"></canvas>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="gray" style="padding-bottom:0px;" id="outros">
+
+				<div class="container">
+					<div class="contentTitle">Assitência técnica</div>
+				</div>
+
+				<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d987.4549405647863!2d-34.905099831613946!3d-8.119826119566532!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0000000000000000%3A0x39bb769a740c711e!2sShopping+Recife!5e0!3m2!1spt-BR!2sbr!4v1423927568825" height="450" frameborder="0" style="border:0; width:100%; margin-bottom:-5px;">
+				</iframe>
+			</div>
+
+			<div class="white">
+
+				<div class="container">
+					<div class="row">
+						<div class="col-md-10">
+							<div class="contentTitle">Outros aparelhos da Motorola</div>
+						</div>
+						<div class="col-md-2">
+							<div class="button raised orange" style="float:right;padding-right:0px;">
+							    <div class="center" fit>ver todos</div>
+							    <paper-ripple fit></paper-ripple>
+						    </div>
+						</div>
+					</div>
+
+					<div class="row compare">
+						<div class="col-md-3">
+							<div class="image"><img src="images/compare/moto-g.jpg" /></div>
+							<div class="name">Motorola Moto G 2014</div>
+						</div>
+						<div class="col-md-3">
+							<div class="image"><img src="images/compare/motorola-moto-x.jpg" /></div>
+							<div class="name">Motorola Moto X</div>
+						</div>
+						<div class="col-md-3">
+							<div class="image"><img src="images/compare/moto-g-1.jpg" /></div>
+							<div class="name">Motorola Moto G</div>
+						</div>
+						<div class="col-md-3">
+							<div class="image"><img src="images/compare/moto-e-1.jpg" /></div>
+							<div class="name">Motorla Moto E</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div>
+				<div id="disqus_thread"></div>
+			</div>
+
+		</div> <!-- content -->
+
+		<script type="text/javascript">
+			$('a[href^="#"]').on('click', function(event) {
+			    var target = $( $(this).attr('href') );
+
+			    if( target.length ) {
+			        event.preventDefault();
+			        $('html, body').animate({
+			            scrollTop: target.offset().top - 100
+			        }, 1000);
+			    }
+			});
+		</script>
+
+	</body>
+
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'guiatec'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>
+    	Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+    </noscript>
+</html>
